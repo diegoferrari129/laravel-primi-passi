@@ -17,6 +17,11 @@
                         {{ $title }}
                     </a>
                 </h1>
+                <p>
+                    <a href="{{ route('home') }}">
+                        {{ $home }}
+                    </a>
+                </p>
             </div>
         </div>
     </div>
