@@ -27,16 +27,17 @@ Route::get('/', function () {
 
 Route::get('/page_1', function () {
     //dichiaro una variabile
-    $title = 'Goodbye World';
-    $home = 'E.T. call home';
-    //collego la view a home.blade.php che passa il valore di $title
-    return view('page_1', compact('title', 'home'));
+    $pages = [
+        'page_1' => 'Page 1',
+        'page_2' => 'Page 2',
+    ];
+    return view('page_1', compact('pages'));
 })->name('page_1');
 
 Route::get('/page_2', function () {
-    //dichiaro una variabile
-    $title = 'Please Come Back World';
-    $home = 'E.T. call home';
-    //collego la view a home.blade.php che passa il valore di $title
-    return view('page_2', compact('title', 'home'));
+    $pages = [
+        'page_1' => 'Page 1',
+        'page_2' => 'Page 2',
+    ];
+    return view('page_2', compact('pages'));
 })->name('page_2');

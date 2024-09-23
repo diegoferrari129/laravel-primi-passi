@@ -9,22 +9,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>
-                    <a href="{{ route('page_2') }}">
-                        {{ $title }}
-                    </a>
-                </h1>
-                <p>
-                    <a href="{{ route('home') }}">
-                        {{ $home }}
-                    </a>
-                </p>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link" href="{{ route('page_1') }}">{{ 'page_1' }}</a>
+                        <a class="nav-linkactive" aria-current="page_2"
+                            href="{{ route('page_2') }}">{{ 'page_2' }}</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 </body>
 
 </html>
