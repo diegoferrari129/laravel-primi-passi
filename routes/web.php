@@ -18,4 +18,4 @@ Route::get('/', function () {
     $title = 'Hello World';
     //collego la view a home.blade.php che passa il valore di $title
     return view('home', compact('title'));
-});
+})->name('home');

@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-12">
                 <h1>
-                    Hello World
+                    <a href="{{ route('home') }}">Hello World</a>
                 </h1>
             </div>
         </div>
