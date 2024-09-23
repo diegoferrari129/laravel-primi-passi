@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //dichiaro una variabile
+    $title = 'Hello World';
+    //collego la view a home.blade.php che passa il valore di $title
+    return view('home', compact('title'));
 });
