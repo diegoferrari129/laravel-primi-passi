@@ -20,6 +20,19 @@
             </div>
         </div>
     </div>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="home" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link" href="{{ route('page_1') }}">{{ 'page_1' }}</a>
+                        <a class="nav-link" href="{{ route('page_2') }}">{{ 'page_2' }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
