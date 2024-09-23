@@ -13,7 +13,9 @@
         <div class="row">
             <div class="col-12">
                 <h1>
-                    <a href="{{ route('home') }}">Hello World</a>
+                    <a href="{{ route('home') }}">
+                        {{ $title }}
+                    </a>
                 </h1>
             </div>
         </div>
